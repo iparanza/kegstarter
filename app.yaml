@@ -1,0 +1,9 @@
+application: kegstarter
+version: 1-alpha
+runtime: python27
+api_version: 1
+threadsafe: true
+
+includes:
+- api.yaml
+
