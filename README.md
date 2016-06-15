@@ -18,3 +18,15 @@ The developer setup is assuming Ubuntu Server 14.04 as a starting point.
 
   4. Start the project with
   `$ /path/to/app_engine/dev_appserver.py --host 0.0.0.0 kegstarter/`
+
+Or You can create a Docker container to run the app. It will install deps and
+start the app server at http://localhost:8080
+```
+$ docker build -t kegstarter <path_to_src>
+$ docker run -d kegstarter
+```
+
+To stop the container, find the container name or id using `docker ps` and
+gracefully stop the server using `docker stop <name|id>`.
+
+
