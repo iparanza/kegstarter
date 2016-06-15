@@ -2,10 +2,7 @@ FROM ubuntu
 
 # Install wget, unzip, python2.7
 RUN apt-get update \
-  && apt-get install -y wget \
-  && apt-get install -y unzip \
-  && apt-get install -y python2.7 python-pil -y \
-  && apt-get install -y python-pip \
+  && apt-get install -y wget unzip python2.7 python-pil python-pip \
   && rm -rf /var/lib/apt/lists/*
 
 # Install GAE
